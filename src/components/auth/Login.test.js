@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom"
 import { Login } from "./Login"
 
 const renderLogin = (props = {}) => {
-  const setToken = jest.fn()
+  const setToken = vi.fn()
   render(
     <BrowserRouter>
       <Login setToken={setToken} {...props} />
